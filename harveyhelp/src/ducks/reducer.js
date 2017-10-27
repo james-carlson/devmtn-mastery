@@ -2,7 +2,8 @@ import axios from 'axios';
 
 
 let initialState = {
-    disasterView: null
+    disasterView: null,
+    contractors: [{name: "Bill and Ted"}, {name: "Mike and Rob"},{name: "ABC Company"}, {name: "Blah Blah Blah"}]
 }
 
 
