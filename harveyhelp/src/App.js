@@ -6,6 +6,12 @@ import ContractorList from './components/ContractorList/ContractorList';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
+
+  componentDidMount(){
+    // get all of the data and pass it in to the components below
+    // at least the list of contractors
+  }
+
   render() {
     return (
       <div>
