@@ -16,6 +16,15 @@ p#table-preface {
 
 h1.motivation {
     font-size: 3rem;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    color: rgb(55, 101, 201);
+}
+
+h2.motivation {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    color: rgb(99, 133, 206);
 }
 
 h1 + img {
