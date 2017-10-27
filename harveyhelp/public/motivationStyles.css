@@ -24,6 +24,22 @@ p#table-preface {
     font-size: 2rem;
 }
 
+table {
+    border-collapse: collapse;
+    float: left;
+    margin-right: 3rem;
+    background-color: rgb(248, 248, 206);
+}
+
+th {
+    text-align: left;
+}
+
+table, th, td {
+    border: 2px solid sandybrown;
+    padding: 1rem;
+}
+
 h1.motivation {
     font-size: 3rem;
     font-family: "Roboto Slab", serif;
@@ -43,7 +59,7 @@ h1 + img {
 
 li li {
     list-style-type: circle;
-    background-color: rgb(248, 248, 206);
+    
 }
 
 footer {
@@ -67,3 +83,12 @@ footer div {
     margin: 0 auto;
     align-content: center;
 }
+
+footer a, a:visited {
+    color: orange;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
