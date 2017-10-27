@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Profile from './Profile/Profile';
 import { connect } from 'react-redux';
-
+import Footer from '../Footer/Footer';
 
 class ContractorList extends Component {
     constructor(props) {
@@ -19,17 +19,19 @@ class ContractorList extends Component {
             <div>
                 {this.disasterName()}
                 <br />
-                <Profile {...this.props}/></div>
+                <Profile {...this.props} />
+                <Footer {...this.props} />
+            </div>
         );
     }
 }
 
 function mapStateToProps(state) {
     return state
-  }
-  
-  const outputActions = {
-  
-  }
-  
-  export default connect(mapStateToProps, outputActions)(ContractorList)
+}
+
+const outputActions = {
+
+}
+
+export default connect(mapStateToProps, outputActions)(ContractorList)

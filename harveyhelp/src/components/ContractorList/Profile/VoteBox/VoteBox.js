@@ -9,9 +9,9 @@ export const VoteBox = ({ contractors }) => {
         console.log("downvote");
     }
 
-    const list = contractors.map(contractor => {
+    const list = contractors.map((contractor, i) => {
         return (
-            <section>
+            <section key={i}>
                 <div className="list-item">
                     <span>
                         <div><button onClick={upVote}>UpVote</button></div>
@@ -24,6 +24,7 @@ export const VoteBox = ({ contractors }) => {
             </section>
         )
     })
+
     return (
         <div>
             {list}

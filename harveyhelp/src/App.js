@@ -2,24 +2,25 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header'
 import ContractorList from './components/ContractorList/ContractorList';
-import Footer from './components/Footer/Footer';
+
 import { connect } from 'react-redux';
+import { Link, Route, Switch } from 'react-router-dom';
+
+import { Welcome } from './components/Welcome/Welcome';
 
 class App extends Component {
 
-  componentDidMount(){
+  componentDidMount() {
     // get all of the data and pass it in to the components below
     // at least the list of contractors
   }
-
-  
 
   render() {
     return (
       <div>
         <Header />
-        <ContractorList disaster={this.props.disasterView} />
-        <Footer />
+        <Route exact path="/" component={Welcome} />
+        <Route path={`/:disaster`} component={ContractorList} disaster={this.props.disasterView} />
       </div>
     );
   }

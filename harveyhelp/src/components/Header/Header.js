@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./Header.css"
 import { connect } from 'react-redux';
 import { changeDisasterView } from '../../ducks/reducer';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -30,7 +31,7 @@ class Header extends Component {
             const {name} = disaster
             let buttonColor = this.state.currentButton === i ? "selected" : ""
             return(
-                <button id={buttonColor} key={i} onClick={()=>this.clickHandler(i)} name={name}>{name}</button>
+                <Link key={i} to={`/${this.disasters[i].name}`}><button id={buttonColor} onClick={()=>this.clickHandler(i)} name={name}>{name}</button></Link>
             )
         })
 
