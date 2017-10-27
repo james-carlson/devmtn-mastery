@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header'
 import ContractorList from './components/ContractorList/ContractorList';
 import Footer from './components/Footer/Footer';
+import { connect } from 'react-redux';
 
 class App extends Component {
 
@@ -12,15 +12,26 @@ class App extends Component {
     // at least the list of contractors
   }
 
+  
+
   render() {
     return (
       <div>
         <Header />
-        <ContractorList />
+        <ContractorList disaster={this.props.disasterView} />
         <Footer />
       </div>
     );
   }
 }
 
-export default App;
+
+function mapStateToProps(state) {
+  return state
+}
+
+const outputActions = {
+
+}
+
+export default connect(mapStateToProps, outputActions)(App)
