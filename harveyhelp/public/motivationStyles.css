@@ -1,4 +1,4 @@
-https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto');
 
 body {
     background-color: #ffffff;
@@ -17,7 +17,7 @@ ul > li {
 }
 
 p.motivation {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 p#table-preface {
