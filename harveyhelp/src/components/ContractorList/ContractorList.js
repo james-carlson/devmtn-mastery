@@ -19,7 +19,7 @@ class ContractorList extends Component {
             <div>
                 {this.disasterName()}
                 <br />
-                <Profile /></div>
+                <Profile {...this.props}/></div>
         );
     }
 }

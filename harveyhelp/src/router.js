@@ -13,10 +13,6 @@ import Reminders from './components/Reminders/Reminders';
 export default (
     <Switch>
         <Route exact path ="/" component={Landing} />
-        <Route path ="/dashboard" component={Dashboard} />
-        <Route path='/header' component={Header} />
-        <Route path ="/photo" component={PhotoUploader} />
-        <Route path ="/form" component={UserInputForm} />
-        <Route path ="/addreminder" component={Reminders} />
+        <Route path ="/donate" component={ContractorList} />
     </Switch>
 )
