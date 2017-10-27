@@ -1,5 +1,15 @@
+https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto
+
 body {
     background-color: #ffffff;
+}
+
+article {
+    margin: 1.5rem 1.5rem 5.5rem 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border: 3px dotted #cdcdcd;
+    border-radius: 4rem;
+    box-sizing: content-box;
 }
 
 ul > li {
@@ -16,13 +26,13 @@ p#table-preface {
 
 h1.motivation {
     font-size: 3rem;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 700;
     color: rgb(55, 101, 201);
 }
 
 h2.motivation {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: rgb(99, 133, 206);
 }
@@ -33,4 +43,27 @@ h1 + img {
 
 li li {
     list-style-type: circle;
+    background-color: rgb(248, 248, 206);
+}
+
+footer {
+     background: no-repeat url("./mexico-earthquake.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+     height: 50px;
+     color: #ffffff;
+     font-weight: 700;
+     font-family: sans-serif;
+     font-size: 1.15re;
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     border: 3px solid rgb(255, 255, 255);
+     display: flex;
+}
+
+footer div {
+    margin: 0 auto;
+    align-content: center;
 }
