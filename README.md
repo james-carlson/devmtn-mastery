@@ -1,2 +1,0 @@
-# devmtn-mastery
-Master assessment.
