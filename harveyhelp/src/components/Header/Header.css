@@ -1,3 +1,22 @@
 #selected {
 background-color: orange;
 }
+
+button:disabled {
+    color: #ffffff;
+    background-color: #b8a487;
+}
+
+#selected:focus {
+    color: #ffffff;
+    outline: orange;
+    border-color: orange;
+  }
+
+.headerFlex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
