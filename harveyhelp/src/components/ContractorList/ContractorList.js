@@ -3,6 +3,7 @@ import Profile from './Profile/Profile';
 import { connect } from 'react-redux';
 import Footer from '../Footer/Footer';
 
+
 class ContractorList extends Component {
     constructor(props) {
         super(props)
