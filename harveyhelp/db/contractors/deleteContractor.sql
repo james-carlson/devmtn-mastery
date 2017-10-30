@@ -1,4 +1,3 @@
 DELETE FROM contractors
-WHERE contractor_id = $1
-
+WHERE contractor_id = $1;
 

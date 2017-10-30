@@ -6,10 +6,15 @@ import Feed from './components/Feed/Feed';
 import Stripe from './components/Footer/Stripe';
 import { connect } from 'react-redux';
 import { Link, Route, Switch } from 'react-router-dom';
-
+import {  getContractors } from './ducks/reducer';
 import { Welcome } from './components/Welcome/Welcome';
 import Footer from './components/Footer/Footer';
+
 class App extends Component {
+
+  componentDidMount(){
+    this.props.getContractors()
+  }
 
   render() {
     return (
@@ -45,7 +50,7 @@ function mapStateToProps(state) {
 }
 
 const outputActions = {
-
+  getContractors
 }
 
 export default connect(mapStateToProps, outputActions)(App)

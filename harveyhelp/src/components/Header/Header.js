@@ -31,7 +31,7 @@ class Header extends Component {
             const {name} = disaster
             let buttonColor = this.state.currentButton === i ? "selected" : ""
             return(
-                <div className="headerFlex"><Link key={i} to={`/${this.disasters[i].name}`}><button id={buttonColor} onClick={()=>this.clickHandler(i)} name={name}>{name}</button></Link></div>
+                <div className="headerFlex" key={i}><Link key={i} to={`/${this.disasters[i].name}`}><button id={buttonColor} onClick={()=>this.clickHandler(i)} name={name}>{name}</button></Link></div>
             )
         })
 

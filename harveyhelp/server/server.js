@@ -12,6 +12,8 @@ app.use(bodyParser.json());
 // app.use( express.static( `${__dirname}/../public/build` ) );
 // app.use(cors());
 
+app.use(cors());
+
 //DATABASE CONNECTION
 massive(process.env.DB_CONNECTIONSTRING).then(db => {
         app.set('db', db)

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { VoteBox } from './VoteBox/VoteBox';
+import VoteBox from './VoteBox/VoteBox';
 
 export default class Profile extends Component {
     render () {
         return (
             <div>Profile<br/>
-            <VoteBox {...this.props} /></div>
+            <VoteBox/></div>
         );
     }
 }
