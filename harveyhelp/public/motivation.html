@@ -24,6 +24,33 @@ https://html.spec.whatwg.org/multipage/syntax.html#the-doctype -->
     </script>
 </head>
 
+<!-- SEMANTIC HTML -->
+<!-- The code below attempts to use semantic HTML. Semantics has to do with meaning.
+For example, h1 is a semantic tag because it tells you something about the meaning of the contents of the tag.
+You know that it is a heading. You could make a similarly sized, spaced, styled span, but you wouldn't know that the text in that 
+element is intended to be a header.
+Semantic tags include
+    <article>
+    <aside>
+    <details>
+    <figcaption>
+    <figure>
+    <footer>
+    <header>
+    <main>
+    <mark>
+    <nav>
+    <section>
+    <summary>
+    <time>
+The goal with semantic HTML is to have you code be as interpretable as possible, or in other words, to put as much meaning into your
+code as you can.
+This will help you with SEO because Google and other search engines use semantics to determine relevance and therefore page-ranking.
+When I code, such as below, I try to use all of the appropriate tags that I can. For example I have wrapped the entire article below 
+in an article tag. Paragraphs have their own tags, and those paragraphs are separated by heading tags, etc.
+The page below doesn't have all of those elements, but it would be ideal on a more complex site to have a nav tag for the navigation area,
+etc. The react portion of this project has a few more of these tags. -->
+
 <body>
     <article>
         <section>
@@ -106,6 +133,10 @@ https://html.spec.whatwg.org/multipage/syntax.html#the-doctype -->
                 Donec porttitor non libero in bibendum. Duis vestibulum pharetra scelerisque. Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.
 
+            </p>
+            <p> Cheers, <br />
+                <script src="./signature.js" type="text/javascript">
+                </script>
             </p>
         </section>
     </article>
